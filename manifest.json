@@ -7,8 +7,8 @@
 	"homepage_url":     "https://github.com/jshoptaw/address-bar-subreddit-shortcut/",
 	"description":      "Allows one to go directly to a subreddit on Reddit by simply typing \"/r/[subreddit]\" (where \"[subreddit]\" is the subreddit name/slug) into the address bar.",
 	"manifest_version": 2,
-	"name":             "Address Bar Subreddit Shortcut",
-	"version":          "1.0.0",
+	"name":             "Address Bar Subreddit Shortcut (kai)",
+	"version":          "1.1.0",
 	"icons":            {
 		"48": "images/icon-48.png",
 		"96": "images/icon-96.png"
@@ -21,7 +21,7 @@
  
 	"background": {
 		"scripts": [
-			"js/background.js"
+			"js/redirect.js"
 		]
 	}
 
