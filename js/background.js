@@ -4,9 +4,13 @@ function subredditShortcut( details ) {
 	parser.href = details.url;
 
 	if ( parser.hostname === 'r' ) {
+        let path = '';
+        if (parser.pathname !== '/') {
+            path = 'r' + parser.pathname;
+        }
 		browser.tabs.update(
 			{
-				url: 'https://reddit.com/r' + parser.pathname
+				url: 'https://reddit.com/' + path
 			}
 		);
 	}
